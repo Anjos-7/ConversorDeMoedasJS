@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style..css">
+</head>
+<body>
+   <h1>Converter dólar para real</h1> 
+
+   <input type="number" id="txn1">
+   <input type="button" value="Converter" onclick="converterDolarParaReal()">
+   <br><br><br>
+
+   <div id="res">
+      Seu valor 
+   </div>
+
+   <script>
+   function converterDolarParaReal() {
+       var n1 = Number(document.getElementById("txn1").value);
+       var res = document.getElementById("res");
+       var s = n1 * 5;  // Taxa de conversão para real
+       res.innerHTML = "R$ " + s.toFixed(2);  // Exibe com duas casas decimais
+   }
+   </script>
+
+   <h1>Converter real para dólar</h1>
+
+   <input type="number" id="txn2">
+   <input type="button" value="Converter" onclick="converterRealParaDolar()">
+   <br><br><br>
+
+   <div id="res2">
+      Seu valor 
+   </div>
+
+   <script>
+   function converterRealParaDolar() {
+       var n1 = Number(document.getElementById("txn2").value);
+       var res = document.getElementById("res2");
+       var s2 = n1 / 5;  // Taxa de conversão para dólar
+       res.innerHTML = "$ " + s2.toFixed(2);  // Exibe com duas casas decimais
+   }
+   </script>
+</body>
+</html>
+
+
+
+
+</body>
+</html>
